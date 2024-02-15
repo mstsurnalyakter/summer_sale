@@ -75,4 +75,9 @@ findElementById("make-purchase").addEventListener("click", ()=>{
 
 findElementById("go-home-btn").addEventListener("click",()=>{
     findElementById("header").scrollIntoView({ behavior: 'smooth' });
+
+    setTimeout(() => {
+      location.reload();
+    }, 500);
+    
 });
