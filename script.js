@@ -5,7 +5,6 @@ const findElementById = id =>{
    return document.getElementById(id);
 }
 
-
 const cards = document.querySelectorAll(".card");
 
 for (const card of cards) {
@@ -52,4 +51,28 @@ findElementById("discountBtn").addEventListener("click", ()=>{
         findElementById("input-field").value = "";
     }
 
+});
+
+findElementById("make-purchase").addEventListener("click", ()=>{
+    const congratulationsMess = findElementById("congratulations-message");
+    const purchaseMess = findElementById("purchase-message");
+    if (totalPrice > 0) {
+       congratulationsMess.innerText = "Congratulations";
+       congratulationsMess.style.color = "black";
+
+       purchaseMess.innerText = "Your are not Purchase any product";
+       purchaseMess.style.color = "black";
+    }else{
+        congratulationsMess.innerText = "Sorry!!";
+        congratulationsMess.style.color = "red";
+
+       purchaseMess.innerText = "Your are not Purchase any product";
+       purchaseMess.style.color = 'red'
+
+
+    }
+});
+
+findElementById("go-home-btn").addEventListener("click",()=>{
+    findElementById("header").scrollIntoView({ behavior: 'smooth' });
 });

@@ -539,7 +539,7 @@
             <!--  onclick="my_modal_5.showModal()" -->
 
             <button
-              onclick="my_modal_5.showModal()"  class="bg-[#E527B2] rounded-lg btn p-3 text-white w-full hover:bg-[#E527B2] btn"
+              onclick="my_modal_5.showModal()" id="make-purchase" class="bg-[#E527B2] rounded-lg btn p-3 text-white w-full hover:bg-[#E527B2] btn"
             >
               Make Purchase
             </button>
@@ -555,14 +555,14 @@
               <div>
                 <img src="./images/congo.png" alt="">
               </div>
-              <div class="text-center">
-                <h1 class="text-[#111] text-5xl font-bold mb-2">Congratulations</h1>
-                <p>Your Purchase the product</p>
+              <div class="text-center" id="modal-message">
+                <h1 class="text-[#111] text-5xl font-bold mb-2" id="congratulations-message"></h1>
+                <p id="purchase-message"></p>
               </div>
             <div class="modal-action">
               <form method="dialog">
                 <!-- if there is a button in form, it will close the modal -->
-               <button class="btn text-white bg-[#E527B2]  hover:bg-[#E527B2] ">Go Home</button>
+               <button class="btn text-white bg-[#E527B2]  hover:bg-[#E527B2]" id="go-home-btn">Go Home</button>
               </form>
             </div>
           </div>
