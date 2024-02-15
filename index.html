@@ -505,12 +505,15 @@
             <div class="rounded-lg w-1/2 lg:w-full   shadow-xl bg-base-100 flex flex-col justify-center px-6 border-4 mb-9 py-7 space-y-2" >
                 <h2 class="text-[#111] text-2xl font-medium">Have coupon?</h2>
                 <div class="">
-                    <input type="text" name="" id="input-field" placeholder="Coupon code" class="p-3 border-none outline-none bg-[#111] rounded-l-lg">
-                <button class="bg-[#E527B2] rounded-r-lg p-3 text-white -ml-2">Apply</button>
+                    <input type="text" name="" id="input-field" placeholder="Coupon code" class="p-3 border-none outline-none bg-[#111] rounded-l-lg text-white">
+                <button class="bg-[#E527B2] rounded-r-lg p-3 text-white -ml-2" id="discountBtn">Apply</button>
                 </div>
             </div>
 
-            <div class="rounded-lg w-1/2 lg:w-full   shadow-xl bg-base-100 flex flex-col justify-center px-6 border-4 mb-9 py-7 space-y-2" >
+            <div class="rounded-lg w-1/2 lg:w-full  shadow-xl bg-base-100 flex flex-col justify-center px-6 border-4 mb-9 py-7 space-y-2" >
+
+              <div id="title-container"></div>
+
                 <hr>
                 <h2 class="text-[#111] text-2xl font-medium">Total Price: $ <span id="totalPrice"></span></h2>
                 <h2 class="text-[#111] text-2xl font-medium">Discount: $ <span id="discount"></span></h2>
@@ -521,7 +524,7 @@
             </div>
 
         </section>
-        
+
       </div>
     </main>
 
